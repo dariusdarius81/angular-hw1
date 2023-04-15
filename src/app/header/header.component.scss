@@ -1,0 +1,175 @@
+:root {
+  --button-padding: 10px 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.main-container {
+  height: 50vh;
+  background-image: url("../mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button {
+  margin-top: 5%;
+  background-color: #90ee90;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+#discoverWorld {
+  font-size: 20px;
+}
+
+#adventure {
+  font-size: 60px;
+}
+
+@media (max-width: 575.98px) {
+  .main-container {
+    height: 150vh;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  #discoverWorld {
+    font-size: 14px;
+  }
+
+  #adventure {
+    font-size: 35px;
+  }
+
+  button {
+    padding: 6px 12px;
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 576px) {
+  .content {
+    width: 90%;
+  }
+
+  #discoverWorld {
+    font-size: 16px;
+  }
+
+  #adventure {
+    font-size: 40px;
+  }
+
+  button {
+    margin-top: 8%;
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    height: 70vh;
+  }
+
+  .content {
+    width: 80%;
+  }
+
+  #discoverWorld {
+    font-size: 17px;
+
+  }
+
+  #adventure {
+    font-size: 50px;
+  }
+
+  button {
+    margin-top: 6%;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-container {
+    height: 60vh;
+  }
+
+  .content {
+    width: 70%;
+  }
+
+  #discoverWorld {
+    font-size: 18px;
+  }
+
+  #adventure {
+    font-size: 55px;
+  }
+
+  button {
+    margin-top: 4%;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    height: 50vh;
+  }
+
+  .content {
+    width: 60%;
+  }
+
+  #discoverWorld {
+    font-size: 20px;
+  }
+
+  #adventure {
+    font-size: 60px;
+  }
+
+  button {
+    margin-top: 3%;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,42 @@
+:root {
+  --input-width: 60%;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #9acd32;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 576px),
+  (max-width: 768px),
+  (max-width: 992px),
+  (max-width: 1200px) {
+  h3 {
+    font-size: 16px;
+  }
+
+  input[type="text"] {
+    width: calc(var(--input-width) * 0.9);
+  }
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  margin-top: 10px;
+  width: var(--input-width);
+  max-width: 400px;
+}

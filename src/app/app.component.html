@@ -1,0 +1,9 @@
+<app-header #headerComponent [cityName]="selectedCityName"></app-header>
+<ng-container *ngIf="router.url === '/' || router.url === ''">
+  <app-search-city></app-search-city>
+  <app-our-services></app-our-services>
+  <app-most-popular
+    (citySelected)="headerComponent.onCitySelected($event)"
+  ></app-most-popular>
+</ng-container>
+<router-outlet></router-outlet>

@@ -1,0 +1,17 @@
+<div class="container">
+  <h3 id="popular">MOST POPULAR</h3>
+  <div class="navigation-buttons">
+    <button (click)="previous()">&lt;</button>
+    <button (click)="next()">&gt;</button>
+  </div>
+  <div class="grid-container">
+    <div *ngFor="let city of arrayOfCities" class="grid-item">
+      <img [src]="city.image" alt="image" />
+      <div class="test">
+        <h3>{{ city.title }}</h3>
+        <p>{{ city.description }}</p>
+        <button (click)="navigateToCityPage(city.title)">VISIT NOW</button>
+      </div>
+    </div>
+  </div>
+</div>

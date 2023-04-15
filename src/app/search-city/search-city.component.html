@@ -1,0 +1,16 @@
+<div class="search-container">
+  <h3>Search & Book all our destinations</h3>
+  <form>
+    <input
+      type="text"
+      matInput
+      [matAutocomplete]="auto"
+      [formControl]="cityControl"
+    />
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onCitySelected($event.option.value)">
+      <mat-option *ngFor="let city of filteredCities | async" [value]="city">
+        {{ city }}
+      </mat-option>
+    </mat-autocomplete>
+    </form>
+</div>
